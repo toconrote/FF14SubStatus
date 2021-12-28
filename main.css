@@ -1,0 +1,22 @@
+section {
+  margin-bottom: 1em;
+}
+div#gearset {
+  max-width: 640px;
+}
+*.flex {
+  display: flex;
+}
+ul.flex > li {
+  flex: 3 2rem;
+  list-style-type: none;
+}
+ul.flex > li:first-child {
+  flex: 1 1 2rem
+}
+ul.flex > li > input[type='text'] {
+  width: 80%
+}
+div.flex > span {
+  flex: 1
+}

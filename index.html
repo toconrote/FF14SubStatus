@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>FF14サブステくん</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <section>
+      クリ<input id="ch" type="number" value="400" autofocus>
+      DH<input id="dh" type="number" value="400">
+      意志<input id="det" type="number" value="390">
+      SS<input id="ss" type="number" value="400">
+      <br>
+      <div class="flex">
+        <span id="disp_chrate"></span> <span id="disp_chmag"></span> <span id="disp_dhrate"></span> <span id="disp_detmag"></span> <span id="disp_sstime"></span> <span id="disp_ssmag"></span> <span id="disp_expmag"></span>
+      </div>
+    </section>
+    <section>
+      ss調整等で固定とするマテリア数（未実装）
+      <div class="flex">
+        <span>アルテマ<input id="fixedUltima" type="number" value="0"></span>
+        <span>オメガ<input id="fixedOmega" type="number" value="0"></span>
+      </div>
+    </section>
+    <section>
+      <div id="gearset">
+        <ul class="flex">
+          <li>部位</li><li>禁断<br><input id="meld_all" type="checkbox"></li><li>ch</li><li>dh</li><li>det</li><li>ss</li>
+        </ul>
+      </div>
+      <button id="calc_start">計算開始</button>
+    </section>
+  </body>
+</html>
+
